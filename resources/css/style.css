@@ -292,6 +292,10 @@ header {
     font-weight: 300i;
 }
 
+.about-heading strong {
+    padding-left: -500px;
+}
+
 .col-right {
     float: right;
     width: 50%;
@@ -315,10 +319,10 @@ header {
     height: 500px;
     width: 700px;
     float: left;
-    margin-top: -50px;
+    margin-top: -40px;
     margin-left: -200px;
     vertical-align: middle;
-    box-shadow: 10px 10px 5px grey;/
+    box-shadow: 10px 10px 5px grey;
 }
 
 .row1 h2:after {
@@ -456,10 +460,19 @@ header {
 /*------------------------------------------------------------*/
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(27, 0, 0, 0.356)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(27, 0, 0, 0.400)), url(../img/city-good.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
+    
+}
+
+.section-testimonials .row {
+    margin-right: 340px;
+}
+
+.section-testimonials .span-1-of-3 {  /* dont do .col span-1-of-3 */
+    padding-left: 50px;
 }
 
 blockquote {
@@ -487,7 +500,8 @@ cite {
 
 cite img {
     height: 45px;
-    border-radius: 50%;
+    width: 45px;
+    border-radius: 60%;
     margin-right: 10px;
     vertical-align: middle;  /* Image is now perfectly aligned with the name */
 
