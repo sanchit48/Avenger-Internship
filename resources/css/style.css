@@ -122,7 +122,7 @@ h3 {
     font-size: 120%;
     margin-right: 3px;
     
-    /* secrets to align text and icons */
+    /* Secrets to align text and icons */
     line-height: 120%;
     vertical-align: top;
     margin-top: -2px; 
@@ -198,7 +198,7 @@ input[type=submit] {
 
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/AvengersHQ.jpg);  /* Means there is an cover above the background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/AvengersHQ.jpg);  /* Means there is an cover above the background image */
     background-size: cover;
     background-position: centre;
     height: 100vh;
@@ -336,6 +336,8 @@ header {
 }
 
 
+
+
 /* -----------------------------------------------------------*/
 /* MEALS */
 /*------------------------------------------------------------*/
@@ -385,25 +387,26 @@ header {
 /*------------------------------------------------------------*/
 
 .section-steps {
-    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/lab.jpg);
     margin-top: 37%;
+    color: #fff;
 }
 
-.steps-box:first-child {
-    text-align: right;
-    padding-right: 3%;
-    margin-top: 30px;
+.section-steps .row:first-child {   /* first child of row means first row not what is inside of it */
+    padding-right: 190px;
 }
 
 
-.steps-box:last-child {
-    padding-left: 3%;
+
+
+.steps-box {
+    padding-left: 300px;
     margin-top: 70px;
 }
 
 .app-screen {
-    width: 40%;
-
+    height: 80%;
+    width: auto;
 }
 
 .works-step {
@@ -471,7 +474,7 @@ header {
     margin-right: 340px;
 }
 
-.section-testimonials .span-1-of-3 {  /* dont do .col span-1-of-3 */
+.section-testimonials .span-1-of-3 {  /* don't do .col span-1-of-3 */
     padding-left: 50px;
 }
 
@@ -487,7 +490,7 @@ blockquote:before {
     content: "\201C";  
     font-size: 500%; 
     display: block;
-    position: absolute;  /* Its parent should be now relative */
+    position: absolute;  /* It's parent should be now relative */
     top: -5px;
     left: -3px;
 }
@@ -557,7 +560,7 @@ cite img {
     font-size: 80%;
 }
 
-.plan-box ul {     /* We dont have to say .plan-box div div ul */
+.plan-box ul {     /* We don't have to say .plan-box div div ul */
     list-style: none;
 }
 
@@ -676,5 +679,5 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
-}
+
 
