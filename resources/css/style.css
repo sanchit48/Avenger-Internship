@@ -267,7 +267,6 @@ header {
 }
 
 
-
 /* -----------------------------------------------------------*/
 /* ABOUT US */
 /*------------------------------------------------------------*/
@@ -336,8 +335,6 @@ header {
 }
 
 
-
-
 /* -----------------------------------------------------------*/
 /* MEALS */
 /*------------------------------------------------------------*/
@@ -368,12 +365,8 @@ header {
     opacity: 0.8;
     width: 100%;                            /* Makes box on individual images */
     height: auto;
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+    transform: scale(1.01);
+    transition: transform 0.5s, opacity 0.5s;    
 }
 
 .meal-photo img:hover {
@@ -393,33 +386,42 @@ header {
 }
 
 .section-steps .row:first-child {   /* first child of row means first row not what is inside of it */
-    padding-right: 190px;
+    margin-right: 370px;
 }
 
-
-
-
-.steps-box {
-    padding-left: 300px;
+.section-steps .steps-box {
+    margin-left: 100px;  /*dont use padding, lines will shrink*/
     margin-top: 70px;
 }
 
-.app-screen {
-    height: 80%;
-    width: auto;
+.section-steps h2:after {
+    display: block;
+    height: 2px;
+    background-color: #cf6d17;   /*makes underline after h2*/ 
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 9px;
 }
 
 .works-step {
     margin-bottom: 70px;
+  
 }
 
-.works-step:last-of-type {
-    margin-bottom: 80px; 
+.works-step:last-of-type {   /*same as last child*/
+    margin-bottom: 8px; 
+}
+
+.works-step p {
+    margin-left: 100px;
+    width: 620px;
+    line-height: 27px;
 }
 
 .works-step div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: #fff;
+    border: 2px solid #c2814d;
     display: inline-block;   /* Makes block around 1,2,3 small */
     border-radius: 50%;
     height: 54px;
@@ -429,24 +431,13 @@ header {
     float: left;
     font-size: 150%;
     margin-right: 25px;
+    margin-top: -5px;
 }
 
-.btn-app:link,
-.btn-app:visited {
-    border: 0px;
-}
-
-
-.btn-app img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
-}
 
 /* -----------------------------------------------------------*/
 /* CITIES */
 /*------------------------------------------------------------*/
-
 
 .box img {
     width: 100%;
